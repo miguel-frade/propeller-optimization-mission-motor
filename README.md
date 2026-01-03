@@ -103,7 +103,7 @@ propeller-optimization-mission-motor/
 │   └── ...                       # Auxiliary functions and airfoil databases
 ├── results/                      # Logs, .mat files, and figures
 └── docs/                         # Theoretical background and documentation
-
+```
 
 ## Installation and Requirements
 
@@ -202,7 +202,7 @@ The optimization problem includes **12 design variables**:
 
 ### SABEMMT Solver
 
-The solver implements **Structures And Blade Element Modified Momentum Theory (SABEMMT)**. 
+The solver implements **Structures And Blade Element Modified Momentum Theory (SABEMMT)**. For a complete mathematical derivation of the model, including the structural equations, please see the [**Technical Documentation (PDF)**](docs/The_SABEMMT_Aerodynamic_and_Structural_Model_for_Propellers.pdf).
 
 #### Modified Momentum Theory
 
@@ -226,7 +226,7 @@ Journal of the American Helicopter Society.
 ## License
 
 **Author:** Miguel Frade  
-**Affiliation:** Universidad Politécnica de Madrid  
+**Affiliation at time of publication:** Universidad Politécnica de Madrid  
 **Date:** December 2025  
 
 This project is licensed under the **Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)** license.
