@@ -1,0 +1,278 @@
+
+============= MISSION PROFILE SPECIFICATIONS ==============
+  1. Slow Cruise (10%): 7.8 m/s, 0.40 N
+  2. Standard Cruise (70%): 10.0 m/s, 0.34 N
+  3. Exigent Climb  (15%): 10.0 m/s, 2.00 N
+  4. Fast Cruise  (5%): 16.7 m/s, 0.51 N
+
+================ INITIALIZING OPTIMIZATION ================
+
+  > GA file NOT found → running GA 
+
+------- Starting Genetic Algorithm (Global Search) --------
+
+  > NOT using Initial Guess for GA ...
+
+Single objective optimization:
+12 Variables
+19 Nonlinear inequality constraints
+
+Options:
+CreationFcn:       @gacreationuniform
+CrossoverFcn:      @crossoverscattered
+SelectionFcn:      @selectionstochunif
+MutationFcn:       @mutationadaptfeasible
+
+                              Best       Max        Stall
+Generation  Func-count        f(x)     Constraint  Generations
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parallel.internal.parfor.ParforEngine/getCompleteIntervals', 'C:\Program Files\MATLAB\R2024a\toolbox\parallel\cluster\+parallel\+internal\+parfor\ParforEngine.m', 211)" style="font-weight:bold">parallel.internal.parfor.ParforEngine/getCompleteIntervals</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\parallel\cluster\+parallel\+internal\+parfor\ParforEngine.m',211,0)">line 211</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parallel_function>distributed_execution', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\lang\parallel_function.m', 742)" style="font-weight:bold">parallel_function>distributed_execution</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\lang\parallel_function.m',742,0)">line 742</a>)
+        [tags, out] = P.getCompleteIntervals(chunkSize);
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parallel_function', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\lang\parallel_function.m', 574)" style="font-weight:bold">parallel_function</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\lang\parallel_function.m',574,0)">line 574</a>)
+    R = distributed_execution(...
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fcnvectorizer', 'C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\private\fcnvectorizer.m', 30)" style="font-weight:bold">fcnvectorizer</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\private\fcnvectorizer.m',30,0)">line 30</a>)
+        parfor (i = 1:popSize)
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('stepGA', 'C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\private\stepGA.m', 61)" style="font-weight:bold">stepGA</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\private\stepGA.m',61,0)">line 61</a>)
+    nextScore = fcnvectorizer(pop,FitnessFcn,1,options.SerialUserFcn,options.ProblemdefOptions.FunOnWorkers);
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('galincon', 'C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\private\galincon.m', 86)" style="font-weight:bold">galincon</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\private\galincon.m',86,0)">line 86</a>)
+        [score,population,state] = stepGA(score,population,options,state,GenomeLength,FitnessFcn);
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('gacon', 'C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\private\gacon.m', 96)" style="font-weight:bold">gacon</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\private\gacon.m',96,0)">line 96</a>)
+                galincon(SubFitness,GenomeLength,Aineq,bineq,Aeq,beq,lb,ub,innerOptions,innerOutput,Iterate);
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ga', 'C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\ga.m', 424)" style="font-weight:bold">ga</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\ga.m',424,0)">line 424</a>)
+                [x,fval,exitFlag,output,population,scores] = gacon(FitnessFcn,nvars, ...
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_optimization', 'C:\Users\Frade\Desktop\CODIGOS_DEFINITIVOS_PARA_GITHUB\8-propeller-optimization-mission-motor\run_optimization.m', 174)" style="font-weight:bold">run_optimization</a> (<a href="matlab: opentoline('C:\Users\Frade\Desktop\CODIGOS_DEFINITIVOS_PARA_GITHUB\8-propeller-optimization-mission-motor\run_optimization.m',174,0)">line 174</a>)
+    [x_norm_opt_GA, fopt_GA, exitflag, output] = ga(FitFcn_GA, 12, [],[],[],[], ...
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main_runner', 'C:\Users\Frade\Desktop\CODIGOS_DEFINITIVOS_PARA_GITHUB\8-propeller-optimization-mission-motor\main_runner.m', 227)" style="font-weight:bold">main_runner</a> (<a href="matlab: opentoline('C:\Users\Frade\Desktop\CODIGOS_DEFINITIVOS_PARA_GITHUB\8-propeller-optimization-mission-motor\main_runner.m',227,0)">line 227</a>)
+run_optimization;
+} 
+main_runner
+[Warning: File not found or permission denied] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main_runner', 'C:\Users\Frade\Desktop\CODIGOS_DEFINITIVOS_PARA_GITHUB\8-propeller-optimization-mission-motor\main_runner.m', 81)" style="font-weight:bold">main_runner</a> (<a href="matlab: opentoline('C:\Users\Frade\Desktop\CODIGOS_DEFINITIVOS_PARA_GITHUB\8-propeller-optimization-mission-motor\main_runner.m',81,0)">line 81</a>)] 
+
+============= MISSION PROFILE SPECIFICATIONS ==============
+  1. Slow Cruise (10%): 7.8 m/s, 0.40 N
+  2. Standard Cruise (70%): 10.0 m/s, 0.34 N
+  3. Exigent Climb  (15%): 10.0 m/s, 2.00 N
+  4. Fast Cruise  (5%): 16.7 m/s, 0.51 N
+
+================ INITIALIZING OPTIMIZATION ================
+
+  > GA file NOT found → running GA 
+
+------- Starting Genetic Algorithm (Global Search) --------
+
+  > NOT using Initial Guess for GA ...
+
+Single objective optimization:
+12 Variables
+19 Nonlinear inequality constraints
+
+Options:
+CreationFcn:       @gacreationuniform
+CrossoverFcn:      @crossoverscattered
+SelectionFcn:      @selectionstochunif
+MutationFcn:       @mutationadaptfeasible
+
+                              Best       Max        Stall
+Generation  Func-count        f(x)     Constraint  Generations
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parallel.internal.parfor.ParforEngine/getCompleteIntervals', 'C:\Program Files\MATLAB\R2024a\toolbox\parallel\cluster\+parallel\+internal\+parfor\ParforEngine.m', 211)" style="font-weight:bold">parallel.internal.parfor.ParforEngine/getCompleteIntervals</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\parallel\cluster\+parallel\+internal\+parfor\ParforEngine.m',211,0)">line 211</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parallel_function>distributed_execution', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\lang\parallel_function.m', 742)" style="font-weight:bold">parallel_function>distributed_execution</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\lang\parallel_function.m',742,0)">line 742</a>)
+        [tags, out] = P.getCompleteIntervals(chunkSize);
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('parallel_function', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\lang\parallel_function.m', 574)" style="font-weight:bold">parallel_function</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\lang\parallel_function.m',574,0)">line 574</a>)
+    R = distributed_execution(...
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('fcnvectorizer', 'C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\private\fcnvectorizer.m', 30)" style="font-weight:bold">fcnvectorizer</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\private\fcnvectorizer.m',30,0)">line 30</a>)
+        parfor (i = 1:popSize)
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('makeState', 'C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\private\makeState.m', 69)" style="font-weight:bold">makeState</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\private\makeState.m',69,0)">line 69</a>)
+        Score = fcnvectorizer(state.Population(initScoreProvided+2:end,:),FitnessFcn,1,...
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('galincon', 'C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\private\galincon.m', 24)" style="font-weight:bold">galincon</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\private\galincon.m',24,0)">line 24</a>)
+state = makeState(GenomeLength,FitnessFcn,Iterate,output.problemtype,options);
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('gacon', 'C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\private\gacon.m', 96)" style="font-weight:bold">gacon</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\private\gacon.m',96,0)">line 96</a>)
+                galincon(SubFitness,GenomeLength,Aineq,bineq,Aeq,beq,lb,ub,innerOptions,innerOutput,Iterate);
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ga', 'C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\ga.m', 424)" style="font-weight:bold">ga</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\globaloptim\globaloptim\ga.m',424,0)">line 424</a>)
+                [x,fval,exitFlag,output,population,scores] = gacon(FitnessFcn,nvars, ...
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_optimization', 'C:\Users\Frade\Desktop\CODIGOS_DEFINITIVOS_PARA_GITHUB\8-propeller-optimization-mission-motor\run_optimization.m', 174)" style="font-weight:bold">run_optimization</a> (<a href="matlab: opentoline('C:\Users\Frade\Desktop\CODIGOS_DEFINITIVOS_PARA_GITHUB\8-propeller-optimization-mission-motor\run_optimization.m',174,0)">line 174</a>)
+    [x_norm_opt_GA, fopt_GA, exitflag, output] = ga(FitFcn_GA, 12, [],[],[],[], ...
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main_runner', 'C:\Users\Frade\Desktop\CODIGOS_DEFINITIVOS_PARA_GITHUB\8-propeller-optimization-mission-motor\main_runner.m', 227)" style="font-weight:bold">main_runner</a> (<a href="matlab: opentoline('C:\Users\Frade\Desktop\CODIGOS_DEFINITIVOS_PARA_GITHUB\8-propeller-optimization-mission-motor\main_runner.m',227,0)">line 227</a>)
+run_optimization;
+} 
+main_runner
+[Warning: File not found or permission denied] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main_runner', 'C:\Users\Frade\Desktop\CODIGOS_DEFINITIVOS_PARA_GITHUB\8-propeller-optimization-mission-motor\main_runner.m', 81)" style="font-weight:bold">main_runner</a> (<a href="matlab: opentoline('C:\Users\Frade\Desktop\CODIGOS_DEFINITIVOS_PARA_GITHUB\8-propeller-optimization-mission-motor\main_runner.m',81,0)">line 81</a>)] 
+
+============= MISSION PROFILE SPECIFICATIONS ==============
+  1. Slow Cruise (10%): 7.8 m/s, 0.40 N
+  2. Standard Cruise (70%): 10.0 m/s, 0.34 N
+  3. Exigent Climb  (15%): 10.0 m/s, 2.00 N
+  4. Fast Cruise  (5%): 16.7 m/s, 0.51 N
+
+================ INITIALIZING OPTIMIZATION ================
+
+  > GA results file NOT found → running GA 
+
+------- Starting Genetic Algorithm (Global Search) --------
+
+  > NOT using Initial Guess for GA ...
+
+Single objective optimization:
+12 Variables
+19 Nonlinear inequality constraints
+
+Options:
+CreationFcn:       @gacreationuniform
+CrossoverFcn:      @crossoverscattered
+SelectionFcn:      @selectionstochunif
+MutationFcn:       @mutationadaptfeasible
+
+                              Best       Max        Stall
+Generation  Func-count        f(x)     Constraint  Generations
+    1         135228     -0.236634            0      0
+    2         275613     -0.245636    2.426e-05      0
+    3         508433     -0.393642            0      0
+Optimization finished: average change in the fitness value less than options.FunctionTolerance and constraint violation is less than options.ConstraintTolerance.
+
+  GA Finished. Runtime: 00h 51m 52.59s
+  GA result saved. GA objective result is: -0.393642
+--------- Starting SQP Refinement (Local Search) ----------
+ Iter  Func-count            Fval   Feasibility   Step Length       Norm of   First-order  
+                                                                       step    optimality
+    0          13   -4.017260e-01     8.059e-02     1.000e+00     0.000e+00     2.466e-01  
+    1          27   -4.031727e-01     1.066e-02     1.000e+00     1.562e-01     1.623e-01  
+    2          41   -4.073100e-01     4.636e-03     1.000e+00     1.037e-01     5.645e-02  
+    3          64   -4.076768e-01     4.400e-03     2.825e-02     7.129e-03     5.767e-02  
+    4          95   -4.077163e-01     4.427e-03     1.628e-03     6.905e-04     5.598e-02  
+    5         125   -4.077793e-01     4.418e-03     2.326e-03     1.029e-03     5.637e-02  
+    6         173   -4.077794e-01     4.418e-03     3.788e-06     1.503e-06     5.637e-02  
+    7         227   -4.077794e-01     4.418e-03     4.457e-07     1.747e-07     5.637e-02  
+    8         287   -4.077794e-01     4.418e-03     7.490e-08     3.237e-08     1.609e+04  
+    9         312   -4.081103e-01     4.363e-03     1.384e-02     2.440e-03     5.356e-02  
+   10         326   -4.209327e-01     3.921e-03     1.000e+00     1.898e-01     1.201e-01  
+   11         340   -4.231941e-01     3.157e-04     1.000e+00     6.978e-02     5.443e-02  
+   12         355   -4.241677e-01     5.534e-04     7.000e-01     6.707e-02     4.634e-02  
+   13         369   -4.244333e-01     2.443e-05     1.000e+00     5.066e-02     5.867e-02  
+   14         383   -4.247754e-01     4.790e-05     1.000e+00     2.177e-02     5.982e-02  
+   15         397   -4.248020e-01     1.408e-06     1.000e+00     8.270e-03     5.835e-02  
+   16         414   -4.248065e-01     1.873e-06     2.401e-01     9.153e-04     5.835e-02  
+   17         442   -4.248069e-01     1.868e-06     4.748e-03     7.146e-05     5.833e-02  
+   18         475   -4.248070e-01     1.867e-06     7.979e-04     1.765e-05     5.833e-02  
+   19         519   -4.248070e-01     1.867e-06     1.578e-05     5.732e-07     5.833e-02  
+   20         533   -4.248720e-01     1.184e-05     1.000e+00     2.845e-03     5.778e-02  
+   21         547   -4.248782e-01     3.596e-07     1.000e+00     3.750e-03     5.711e-02  
+   22         572   -4.248789e-01     3.573e-07     1.384e-02     4.174e-04     5.700e-02  
+   23         594   -4.248796e-01     3.814e-07     5.765e-02     4.595e-04     5.665e-02  
+   24         608   -4.248800e-01     1.209e-09     1.000e+00     7.538e-04     5.603e-02  
+   25         622   -4.248813e-01     1.552e-08     1.000e+00     1.838e-03     5.672e-02  
+   26         650   -4.248813e-01     1.079e-08     4.748e-03     7.207e-05     5.672e-02  
+   27         678   -4.248813e-01     1.107e-08     4.748e-03     1.500e-05     5.672e-02  
+   28         718   -4.248813e-01     1.113e-08     6.571e-05     2.174e-07     5.670e-02  
+   29         732   -4.248816e-01     1.022e-09     1.000e+00     6.842e-04     6.054e-02  
+ Iter  Func-count            Fval   Feasibility   Step Length       Norm of   First-order  
+                                                                       step    optimality
+   30         756   -4.248816e-01     5.773e-09     1.977e-02     3.600e-05     6.043e-02  
+   31         778   -4.248816e-01     9.408e-09     4.035e-02     3.971e-05     6.014e-02  
+   32         802   -4.248816e-01     9.329e-09     1.977e-02     3.483e-05     6.008e-02  
+   33         816   -4.248817e-01     6.095e-10     1.000e+00     2.222e-04     5.580e-02  
+   34         830   -4.248818e-01     8.722e-12     1.000e+00     1.725e-04     5.557e-02  
+   35         844   -4.248822e-01     8.017e-10     1.000e+00     7.638e-04     5.551e-02  
+   36         867   -4.248822e-01     9.910e-09     2.825e-02     6.239e-05     5.551e-02  
+   37         892   -4.248822e-01     1.509e-08     1.384e-02     4.372e-05     5.550e-02  
+   38         918   -4.248822e-01     3.483e-08     9.689e-03     3.321e-05     5.612e-02  
+   39         940   -4.248822e-01     4.080e-08     4.035e-02     5.998e-05     5.612e-02  
+   40         967   -4.248823e-01     4.606e-08     6.782e-03     5.181e-05     5.612e-02  
+   41         991   -4.248823e-01     4.992e-08     1.977e-02     4.800e-05     5.612e-02  
+   42        1017   -4.248823e-01     5.058e-08     9.689e-03     2.345e-05     5.612e-02  
+   43        1046   -4.248823e-01     5.054e-08     3.323e-03     8.041e-06     5.612e-02  
+   44        1082   -4.248823e-01     5.053e-08     2.737e-04     6.778e-07     5.612e-02  
+   45        1122   -4.248823e-01     5.053e-08     6.571e-05     1.626e-07     5.612e-02  
+   46        1168   -4.248823e-01     5.053e-08     7.731e-06     1.598e-08     5.589e-02  
+   47        1205   -4.248823e-01     5.053e-08     1.856e-06     1.465e-09     5.580e-02  
+
+Optimization stopped because the <a href = "matlab: helpview('optim','norm_curr_step_fminconip','CSHelpWindow');">relative changes in all elements of x</a> are
+less than <a href = "matlab: helpview('optim','tolx','CSHelpWindow');">options.StepTolerance</a> = 1.000000e-09, and the relative maximum constraint
+violation, 5.052811e-08, is less than <a href = "matlab: helpview('optim','tol_con','CSHelpWindow');">options.ConstraintTolerance</a> = 1.000000e-02.
+
+
+  SQP Finished. Runtime: 00h 00m 24.26s
+
+  SQP improvement over GA: -0.393642 -> -0.424882
+
+  Final Results saved to results/SQP_final_result.mat
+
+================== SQP CONSTRAINT AUDIT ===================
+THRUST TARGETS (Error):
+  Slow           :  -0.000%  [SATISFIED]
+  Cruise         :  -0.000%  [SATISFIED]
+  Climb          :  -0.000%  [SATISFIED]
+  Fast           :  -0.000%  [SATISFIED]
+PHYSICAL LIMITS (Usage):
+  Slow I_mot     :   26.9%   [SATISFIED]
+  Slow V_batt    :   43.2%   [SATISFIED]
+  Cruise I_mot   :   25.9%   [SATISFIED]
+  Cruise V_batt  :   44.0%   [SATISFIED]
+  Climb I_mot    :   93.8%   [SATISFIED]
+  Climb V_batt   :   89.7%   [SATISFIED]
+  Climb M_tip    :   34.0%   [SATISFIED]
+  Climb Stress   :  100.0%   [ACTIVE (ON LIMIT)]
+  Fast I_mot     :   41.0%   [SATISFIED]
+  Fast V_batt    :   63.1%   [SATISFIED]
+  Fast M_tip     :   29.0%   [SATISFIED]
+
+==================== NUMERICAL RESULTS ====================
+
+==================== NUMERICAL RESULTS ====================
+
+--- Geometric characteristics (numbers) ---
+Optimized Radius: 10.5870 cm
+Bezier cubic coefficients for the pitch distribution are:a0 = 1.5, a1 = 0.00266966, a2 = 0.729819, a3 = 0.147929
+Bezier cubic coefficients for the chord distribution (NOT NORMALIZED) are:c0 = 0.0153512, c1 = 0.0272626, c2 = 0.00894019, c3 = -1.16729e-21
+
+--- Slow Cruise ---
+  Velocity:   7.8 m/s
+  RPM:        3865
+  Thrust:     0.396 N (Target: 0.396)
+  Torque:     0.014 Nm
+  eta_mp:  39.13% (eta_p: 55.3%, eta_m: 70.8%)
+  Elec Power: 7.93 W (3.20 V * 2.48 A)
+
+--- Standard Cruise ---
+  Velocity:   10.0 m/s
+  RPM:        3988
+  Thrust:     0.343 N (Target: 0.343)
+  Torque:     0.013 Nm
+  eta_mp:  44.16% (eta_p: 61.9%, eta_m: 71.4%)
+  Elec Power: 7.78 W (3.26 V * 2.39 A)
+
+--- Climb ---
+  Velocity:   10.0 m/s
+  RPM:        6711
+  Thrust:     2.000 N (Target: 2.000)
+  Torque:     0.053 Nm
+  eta_mp:  34.91% (eta_p: 53.7%, eta_m: 65.0%)
+  Elec Power: 57.29 W (6.64 V * 8.63 A)
+
+--- Fast Cruise ---
+  Velocity:   16.7 m/s
+  RPM:        5580
+  Thrust:     0.513 N (Target: 0.513)
+  Torque:     0.022 Nm
+  eta_mp:  48.53% (eta_p: 66.1%, eta_m: 73.4%)
+  Elec Power: 17.62 W (4.67 V * 3.78 A)
