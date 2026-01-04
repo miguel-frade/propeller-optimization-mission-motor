@@ -1,0 +1,125 @@
+
+============= MISSION PROFILE SPECIFICATIONS ==============
+  1. Slow Cruise (10%): 7.8 m/s, 0.40 N
+  2. Standard Cruise (70%): 10.0 m/s, 0.34 N
+  3. Exigent Climb  (15%): 10.0 m/s, 2.00 N
+  4. Fast Cruise  (5%): 16.7 m/s, 0.51 N
+
+================ INITIALIZING OPTIMIZATION ================
+
+  > GA results file found but PROBLEM VALUES HAVE CHANGED
+
+    You can run GA for the new problem and then run SQP from there,
+
+    or you can run SQP for the new problem but from the saved GA result.
+
+  > Run GA for the new problem? (y/n): n
+  > Moving on to SQP starting from the previous GA solution saved
+
+--------- Starting SQP Refinement (Local Search) ----------
+ Iter  Func-count            Fval   Feasibility   Step Length       Norm of   First-order  
+                                                                       step    optimality
+    0          13   -4.530017e-01     2.754e-01     1.000e+00     0.000e+00     2.778e-01  
+    1          29   -4.574882e-01     1.857e-01     3.430e-01     1.101e-01     3.783e-01  
+    2          43   -4.575935e-01     1.017e-01     7.000e-01     1.527e-01     2.462e-01  
+    3          56   -4.641172e-01     5.700e-02     1.000e+00     1.276e-01     1.840e-01  
+    4          69   -4.656017e-01     9.237e-03     1.000e+00     5.432e-02     7.473e-02  
+    5          82   -4.658336e-01     1.582e-03     1.000e+00     2.081e-02     3.181e-02  
+    6          95   -4.660187e-01     1.367e-03     1.000e+00     3.213e-02     1.906e-02  
+    7         109   -4.662815e-01     1.313e-03     1.000e+00     5.697e-02     4.876e-02  
+    8         123   -4.665078e-01     1.972e-05     1.000e+00     4.852e-02     5.935e-02  
+    9         137   -4.666981e-01     1.753e-05     1.000e+00     3.703e-02     2.358e-02  
+   10         160   -4.667057e-01     1.791e-05     4.035e-02     1.751e-03     2.288e-02  
+   11         182   -4.667218e-01     2.136e-05     4.035e-02     3.288e-03     1.694e-02  
+   12         211   -4.667292e-01     2.367e-05     3.323e-03     1.649e-03     1.600e-02  
+   13         235   -4.667339e-01     2.440e-05     2.825e-02     9.504e-04     1.491e-02  
+   14         249   -4.668445e-01     2.169e-05     1.000e+00     2.827e-02     1.526e-02  
+   15         262   -4.668506e-01     1.891e-05     1.000e+00     6.077e-03     9.891e-03  
+   16         276   -4.668536e-01     1.695e-07     1.000e+00     9.569e-03     3.488e-03  
+   17         290   -4.668590e-01     1.303e-07     1.000e+00     4.522e-03     7.188e-03  
+   18         312   -4.668593e-01     1.472e-07     4.035e-02     1.997e-04     7.489e-03  
+   19         336   -4.668597e-01     4.290e-07     2.825e-02     3.880e-04     7.333e-03  
+   20         359   -4.668606e-01     1.242e-06     4.035e-02     7.035e-04     7.009e-03  
+   21         385   -4.668616e-01     1.905e-06     1.384e-02     7.822e-04     6.660e-03  
+   22         411   -4.668623e-01     2.337e-06     1.384e-02     5.336e-04     6.440e-03  
+   23         445   -4.668624e-01     2.337e-06     7.979e-04     3.217e-05     6.432e-03  
+   24         484   -4.668624e-01     2.337e-06     1.341e-04     6.625e-06     6.429e-03  
+   25         528   -4.668624e-01     2.337e-06     2.254e-05     1.493e-06     6.428e-03  
+   26         581   -4.668624e-01     2.337e-06     9.095e-07     7.155e-08     1.420e+03  
+   27         630   -4.668625e-01     1.847e-06     3.788e-06     1.555e-06     6.428e-03  
+   28         665   -4.668625e-01     1.845e-06     5.585e-04     4.057e-06     6.424e-03  
+   29         707   -4.668625e-01     1.845e-06     4.600e-05     1.108e-06     1.420e+03  
+ Iter  Func-count            Fval   Feasibility   Step Length       Norm of   First-order  
+                                                                       step    optimality
+   30         759   -4.668625e-01     1.845e-06     1.259e-08     7.949e-10     4.105e-02  
+
+Optimization stopped because the <a href = "matlab: helpview('optim','norm_curr_step_fminconip','CSHelpWindow');">relative changes in all elements of x</a> are
+less than <a href = "matlab: helpview('optim','tolx','CSHelpWindow');">options.StepTolerance</a> = 1.000000e-09, and the relative maximum constraint
+violation, 1.845297e-06, is less than <a href = "matlab: helpview('optim','tol_con','CSHelpWindow');">options.ConstraintTolerance</a> = 1.000000e-02.
+
+
+  SQP Finished. Runtime: 00h 00m 14.30s
+
+  SQP improvement over GA: -0.425463 -> -0.466862
+
+  Final Results saved to results/SQP_final_result.mat
+
+================== SQP CONSTRAINT AUDIT ===================
+THRUST TARGETS (Error):
+  Slow           :  -0.000%  [SATISFIED]
+  Cruise         :  -0.000%  [SATISFIED]
+  Climb          :  -0.000%  [SATISFIED]
+  Fast           :   0.000%  [SATISFIED]
+PHYSICAL LIMITS (Usage):
+  Slow I_mot     :   23.4%   [SATISFIED]
+  Slow V_batt    :   44.2%   [SATISFIED]
+  Cruise I_mot   :   22.4%   [SATISFIED]
+  Cruise V_batt  :   46.5%   [SATISFIED]
+  Climb I_mot    :   86.9%   [SATISFIED]
+  Climb V_batt   :   90.7%   [SATISFIED]
+  Climb M_tip    :   27.6%   [SATISFIED]
+  Climb Stress   :  100.0%   [ACTIVE (ON LIMIT)]
+  Fast I_mot     :   34.3%   [SATISFIED]
+  Fast V_batt    :   67.2%   [SATISFIED]
+  Fast M_tip     :   25.3%   [SATISFIED]
+
+==================== NUMERICAL RESULTS ====================
+
+==================== NUMERICAL RESULTS ====================
+
+--- Geometric characteristics (numbers) ---
+Optimized Radius: 8.1426 cm
+Bezier cubic coefficients for the pitch distribution are:a0 = 1.42016, a1 = 0.536244, a2 = 0.499095, a3 = 0.318199
+Bezier cubic coefficients for the chord distribution (NOT NORMALIZED) are:c0 = 0.00921229, c1 = 0.040713, c2 = 0.0291457, c3 = -8.91273e-21
+
+--- Slow Cruise ---
+  Velocity:   7.8 m/s
+  RPM:        4103
+  Thrust:     0.396 N (Target: 0.396)
+  Torque:     0.012 Nm
+  eta_mp:  44.10% (eta_p: 61.4%, eta_m: 71.9%)
+  Elec Power: 7.04 W (3.27 V * 2.15 A)
+
+--- Standard Cruise ---
+  Velocity:   10.0 m/s
+  RPM:        4382
+  Thrust:     0.343 N (Target: 0.343)
+  Torque:     0.011 Nm
+  eta_mp:  48.51% (eta_p: 66.8%, eta_m: 72.6%)
+  Elec Power: 7.08 W (3.44 V * 2.06 A)
+
+--- Climb ---
+  Velocity:   10.0 m/s
+  RPM:        7056
+  Thrust:     2.000 N (Target: 2.000)
+  Torque:     0.049 Nm
+  eta_mp:  37.29% (eta_p: 55.3%, eta_m: 67.5%)
+  Elec Power: 53.63 W (6.71 V * 7.99 A)
+
+--- Fast Cruise ---
+  Velocity:   16.7 m/s
+  RPM:        6267
+  Thrust:     0.513 N (Target: 0.513)
+  Torque:     0.018 Nm
+  eta_mp:  54.57% (eta_p: 71.7%, eta_m: 76.1%)
+  Elec Power: 15.67 W (4.97 V * 3.15 A)
