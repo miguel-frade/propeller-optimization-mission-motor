@@ -1,4 +1,4 @@
-# Propeller Optimization for Mission Profiles considering Motor Constraints
+# Propeller Optimization for Mission Profiles considering Structural and Motor Constraints
 
 This project implements a multiphysics design framework that optimizes propeller geometry (chord and twist) for weighted average efficiency across a 4-stage mission profile. It utilizes a hybrid Genetic Algorithm (GA) and SQP approach, coupling a Modified Momentum Theory (SABEMMT) aerodynamic solver with a brushless motor model to ensure designs meet strict structural, aerodynamic and electrical limits.
 
